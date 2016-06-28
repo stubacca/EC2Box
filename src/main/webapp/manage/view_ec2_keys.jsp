@@ -119,6 +119,7 @@
 
             <p>
             <s:form action="viewEC2Keys">
+            <s:token/>
             <s:hidden name="sortedSet.orderByDirection" />
             <s:hidden name="sortedSet.orderByField"/>
             </s:form>
@@ -178,6 +179,7 @@
                         <div class="row">
                             <s:actionerror/>
                             <s:form action="importEC2Key" class="save_ec2Key_form_import">
+                                <s:token/>
                                 <s:if test="awsCredList.size()==1">
                                     <s:hidden name="ec2Key.awsCredId" value="%{awsCredList.get(0).getId()}"/>
                                 </s:if>

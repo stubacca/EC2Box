@@ -80,6 +80,7 @@
 
     <div class="container">
         <s:form action="viewUsers">
+            <s:token/>
             <s:hidden name="sortedSet.orderByDirection" />
             <s:hidden name="sortedSet.orderByField"/>
         </s:form>
@@ -175,6 +176,7 @@
                     <div class="modal-body">
                         <s:actionerror/>
                         <s:form action="saveUser" class="save_user_form_add" autocomplete="off">
+                            <s:token/>
                             <s:textfield name="user.username" label="Username" size="15"/>
                             <s:select name="user.userType" list="#{'A':'Administrative Only','M':'Full Access'}" label="UserType"/>
                             <s:textfield name="user.firstNm" label="First Name" size="15"/>
@@ -208,6 +210,7 @@
                                 <div class="row">
                                     <s:actionerror/>
                                     <s:form action="saveUser" id="save_user_form_edit_%{id}" autocomplete="off">
+                                        <s:token/>
                                         <s:textfield name="user.username" value="%{username}" label="Username" size="15"/>
                                         <s:select name="user.userType" value="%{userType}" list="#{'A':'Administrative Only','M':'Full Access'}" label="UserType"/>
                                         <s:textfield name="user.firstNm" value="%{firstNm}" label="First Name" size="15"/>

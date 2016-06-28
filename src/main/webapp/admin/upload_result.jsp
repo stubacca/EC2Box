@@ -132,6 +132,7 @@
 </s:else>
 
 <s:form action="push" method="post">
+    <s:token/>
     <s:hidden name="pushDir"/>
     <s:hidden name="uploadFileName"/>
 </s:form>

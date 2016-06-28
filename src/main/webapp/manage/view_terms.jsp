@@ -166,6 +166,7 @@ $(document).ready(function() {
 
                 <div class="align-right">
                     <s:form id="filter_frm" theme="simple">
+                        <s:token/>
                         <s:label value=""/>
                         <s:textfield name="filter" type="text" class="spacer spacer-right"/><div class="btn btn-primary submit_btn spacer spacer-right">Filter</div><div class="btn btn-primary clear_btn spacer spacer-right">Clear</div>
                     </s:form>

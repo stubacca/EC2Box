@@ -6,15 +6,15 @@
 		<interceptors>
 			<interceptor name="HSTS" class="com.ec2box.common.interceptor.HTTPStrictTransportSecurityInterceptor" />
 			<interceptor name="Clickjacking" class="com.ec2box.common.interceptor.ClickjackingInterceptor" />
-			
+			<interceptor name="token" class="com.ec2box.common.interceptor.CSRFInterceptor"/>
 			<interceptor-stack name="ec2boxStack">
 				<interceptor-ref name="HSTS" />
 				<interceptor-ref name="Clickjacking" />
+				<interceptor-ref name="token" />
 				<interceptor-ref name="defaultStack"/>
 			</interceptor-stack>
 		</interceptors>
 
 	</package>
-	
     <constant name="struts.convention.default.parent.package" value="default"/>
 </struts>

@@ -108,6 +108,7 @@
                     </table>
                     <button onclick="window.location = 'menu.action'" class="btn btn-danger spacer spacer-left" style="float:left">Skip for Now</button>
                     <s:form action="otpSubmit" theme="simple" >
+                        <s:token/>
                         <s:hidden name="sharedSecret"/>
                         <s:submit cssClass="btn btn-primary spacer spacer-right" value="Got It!"/>
                     </s:form>

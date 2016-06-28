@@ -573,6 +573,7 @@
                 </ul>
                 <div class="align-right">
                     <s:form id="match_frm" theme="simple">
+                        <s:token/>
                         <label>Sort By</label>&nbsp;&nbsp;<s:textfield id="match" name="match"
                                                                        placeholder="Bring terminals to top that match RegExp"
                                                                        size="40"
@@ -651,6 +652,7 @@
                     <div class="row">
                         <div class="error">Error: <s:property value="pendingSystemStatus.errorMsg"/></div>
                         <s:form id="password_frm" action="createTerms">
+                            <s:token/>
                             <s:hidden name="pendingSystemStatus.id"/>
                             <s:password name="password" label="Password" size="15" value="" autocomplete="off"/>
                             <s:if test="script!=null">
@@ -680,6 +682,7 @@
                     <div class="row">
                         <div class="error">Error: <s:property value="pendingSystemStatus.errorMsg"/></div>
                         <s:form id="passphrase_frm" action="createTerms">
+                            <s:token/>
                             <s:hidden name="pendingSystemStatus.id"/>
                             <s:password name="passphrase" label="Passphrase" size="15" value="" autocomplete="off"/>
                             <s:if test="script!=null">
@@ -707,6 +710,7 @@
                     <div class="row">
                         <div class="error">Error: <s:property value="currentSystemStatus.errorMsg"/></div>
                         <s:form id="error_frm" action="createTerms">
+                            <s:token/>
                             <s:hidden name="pendingSystemStatus.id"/>
                             <s:if test="script!=null">
                                 <s:hidden name="script.id"/>
@@ -737,6 +741,7 @@
     </div>
 
     <s:form id="composite_terms_frm" action="createTerms">
+        <s:token/>
         <s:hidden name="pendingSystemStatus.id"/>
     <s:if test="script!=null">
         <s:hidden name="script.id"/>

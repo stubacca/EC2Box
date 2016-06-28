@@ -108,6 +108,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <s:form action="addProfileToUser">
+                                <s:token/>
                                 <s:select name="profileId" list="profileList" headerKey="" headerValue="- Select One -"
                                           listKey="id" listValue="%{nm}"/>
                                 <s:hidden name="user.id"/>

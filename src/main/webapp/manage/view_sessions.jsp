@@ -61,6 +61,7 @@
 
 
     <s:form action="viewSessions" theme="simple">
+        <s:token/>
         <s:hidden name="sortedSet.orderByDirection"/>
         <s:hidden name="sortedSet.orderByField"/>
     </s:form>

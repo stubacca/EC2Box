@@ -138,6 +138,7 @@
             <tr>
                 <td class="align_left"><br/>
                     <s:form action="viewSystems" id="showStatusForm" theme="simple">
+                        <s:token/>
                         <s:hidden name="sortedSet.orderByDirection"/>
                         <s:hidden name="sortedSet.orderByField"/>
                         <s:if test="script!=null && script.id!=null">
@@ -158,6 +159,7 @@
 
                 <td>
                     <s:form action="viewSystems" theme="simple">
+                        <s:token/>
                         <s:hidden name="sortedSet.orderByDirection"/>
                         <s:hidden name="sortedSet.orderByField"/>
                         <s:if test="script!=null && script.id!=null">
@@ -217,6 +219,7 @@
 
         <s:if test="(sortedSet.itemList!= null && !sortedSet.itemList.isEmpty())">
         <s:form action="selectSystemsForCompositeTerms" id="select_frm" theme="simple">
+        <s:token/>
         <s:if test="script!=null && script.id!=null">
             <s:hidden name="script.id"/>
         </s:if>
@@ -332,6 +335,7 @@
                             <div class="modal-body">
                                 <div class="row">
                                     <s:form action="saveSystem" id="save_sys_form_edit_%{id}">
+                                        <s:token/>
                                         <s:textfield name="hostSystem.user" value="%{user}" label="System User"
                                                      size="10"/>
                                         <s:textfield name="hostSystem.port" value="%{port}" label="Port" size="2"/>

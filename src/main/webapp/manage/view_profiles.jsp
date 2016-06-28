@@ -76,6 +76,7 @@
 
 <div class="container">
     <s:form action="viewProfiles">
+        <s:token/>
         <s:hidden name="sortedSet.orderByDirection"/>
         <s:hidden name="sortedSet.orderByField"/>
         <s:if test="script!=null">
@@ -142,6 +143,7 @@
                 </div>
                 <div class="modal-body">
                     <s:form action="saveProfile" class="save_profile_form_add">
+                        <s:token/>
                         <s:textfield name="profile.nm" label="Name" size="15"/>
                         <s:textfield name="profile.tag" placeholder="tag-name[=value[,tag-name[=value]]"
                                      size="25" label="Tag"/>
@@ -168,6 +170,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <s:form action="saveProfile" id="save_profile_form_edit_%{id}">
+                                <s:token/>
                                 <s:textfield name="profile.nm" value="%{nm}" label="Name" size="15"/>
                                 <s:textfield name="profile.tag" placeholder="tag-name[=value[,tag-name[=value]]"
                                              size="25" label="Tag" value="%{tag}"/>

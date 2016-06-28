@@ -82,6 +82,7 @@
 <div class="container">
     <s:set var="selectForm"><s:property value="#parameters['selectForm']"/></s:set>
     <s:form action="viewScripts">
+        <s:token/>
         <s:hidden name="sortedSet.orderByDirection"/>
         <s:hidden name="sortedSet.orderByField"/>
     </s:form>
@@ -135,6 +136,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <s:form action="saveScript" class="save_script_form_add">
+                            <s:token/>
                             <s:textfield name="script.displayNm" label="Script Name" size="15"/>
                             <s:textarea name="script.script" label="Script" rows="15" cols="35" wrap="off"/>
                             <s:hidden name="sortedSet.orderByDirection"/>
@@ -161,6 +163,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <s:form action="saveScript" id="save_script_form_edit_%{id}">
+                                <s:token/>
                                 <s:textfield name="script.displayNm" value="%{displayNm}"  label="Script Name" size="15"/>
                                 <s:textarea name="script.script" value="%{script}" label="Script" rows="15" cols="35" wrap="off"/>
                                 <s:hidden name="script.id" value="%{id}"/>
