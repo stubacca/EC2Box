@@ -153,7 +153,7 @@ Open browser to https://\<whatever ip\>:8443
 Login with 
 
 	username:admin 
-	password:changeme
+	password:instance-id
 
 Steps:
 
